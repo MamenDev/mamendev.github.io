@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #0078D7;  /* Color de fondo del header */
+    background-color: #33ffa2;  /* Color de fondo del header */
     color: white;               /* Color del texto */
     padding: 10px 0;
     text-align: center;
@@ -34,7 +34,7 @@ section {
 }
 
 footer {
-    background-color: #0078D7; /* Color de fondo del footer */
+    background-color: #33ffa2; /* Color de fondo del footer */
     color: white;              /* Color del texto */
     text-align: center;
     padding: 10px 0;
