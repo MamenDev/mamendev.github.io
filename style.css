@@ -16,7 +16,6 @@ body {
     display: flex;
     flex-direction: column; /* Organiza los hijos en columna */
     min-height: 100vh;      /* La página debe ocupar al menos toda la altura del viewport */
-    font-family: Arial, sans-serif;
 }
 
 header {
@@ -29,6 +28,9 @@ header {
 .content {
     flex: 1; /* Este elemento ocupará el espacio disponible */
     padding: 20px;
+    min-height: 60vh; /* Ajusta según tu diseño */
+    max-width: 1200px;
+    margin: auto; /* Centrar contenido */
 }
 
 section {
