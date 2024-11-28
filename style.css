@@ -3,9 +3,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-image: url('fondo2.jpg'); 
+    background-size: cover;            
+    background-repeat: no-repeat;      
+    background-position: center;       
 }
+
 header {
     background-color: #0078D7;
     color: white;
