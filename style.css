@@ -18,7 +18,6 @@ body {
 }
 
 header {
-    background-color: rgba(51, 255, 162, 0.3);  /* Color de fondo del header */
     color: rgb(255, 255, 255);                            /* Color del texto */
     padding: 10px 0;
     text-align: center;
@@ -52,22 +51,40 @@ header {
 
 section {
     padding: 20px;
-    margin-top: 30px;                        /* Separación entre header y section */
-    background-color: rgba(51, 255, 162, 0.3); /* Color de fondo de la sección */
-    color: rgb(250, 250, 250);                            /* Color del texto */
+    margin: 30px auto; /* Margen superior y centrar horizontalmente */
+    color: rgb(250, 250, 250); /* Color del texto para el section */
     text-align: center;
+    display: flex; /* Flexbox para alinear los elementos */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    align-items: center; /* Alineación vertical */
+    width: 80%; /* El ancho del contenedor ocupa el 80% de la pantalla */
+    max-width: 1200px; /* Límite máximo de ancho */
+    gap: 20px; /* Espaciado entre los divs */
 }
 
-.imagen-section {
-    position: absolute;  /* Posiciona la imagen de forma absoluta dentro de la sección */
-    top: 20px;           /* Espacio desde la parte superior */
-    left: 20px;          /* Espacio desde la izquierda */
-    width: 150px;        /* Ajusta el tamaño de la imagen */
-    height: auto;        /* Mantiene la proporción de la imagen */
+.fotopersonal {
+    flex: 0 0 40%; /* Ocupa el 40% del ancho del contenedor */
+    display: flex; /* Flexbox para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px; /* Espaciado interno */
 }
+
+.fotopersonal img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    max-height: 100%; /* Asegura que la imagen no crezca más allá del div */
+    object-fit: cover; /* Recorta la imagen si es necesario para encajar */
+}
+
+.descripcion {
+    flex: 0 0 60%; /* Ocupa el 60% del ancho del contenedor */
+    color: white; /* Texto blanco */
+    text-align: left; /* Alineación del texto a la izquierda */
+    padding: 20px; /* Espaciado interno */
+}
+
 
 footer {
-    background-color: rgba(51, 255, 162, 0.3); /* Color de fondo del footer */
     color: rgb(249, 247, 247);                            /* Color del texto */
     text-align: center;
     padding: 10px 0;
