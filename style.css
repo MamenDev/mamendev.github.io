@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -6,7 +12,11 @@ body {
     background-image: url('fondo2.png'); 
     background-size: cover;            
     background-repeat: no-repeat;      
-    background-position: center;       
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Organiza los hijos en columna */
+    min-height: 100vh;      /* La página debe ocupar al menos toda la altura del viewport */
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -15,12 +25,19 @@ header {
     padding: 20px;
     text-align: center;
 }
+
+.content {
+    flex: 1; /* Este elemento ocupará el espacio disponible */
+    padding: 20px;
+}
+
 section {
     padding: 20px;
 }
+
 footer {
+    background-color: #0078D7; /* Color de fondo */
+    color: white;             /* Color del texto */
     text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    padding: 10px 0;
 }
