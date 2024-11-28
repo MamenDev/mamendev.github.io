@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('fondo3.jpg'); /* Ruta de la imagen de fondo */
+    background-image: url('fondo4.jpg'); /* Ruta de la imagen de fondo */
     background-size: cover;             /* La imagen cubre todo el fondo */
     background-repeat: no-repeat;       /* No repite la imagen */
     background-position: center;        /* Centra la imagen */
@@ -19,13 +19,34 @@ body {
 
 header {
     background-color: rgba(51, 255, 162, 0.3);  /* Color de fondo del header */
-    color: rgb(255, 255, 255);   /* Color del texto */
+    color: rgb(255, 255, 255);                            /* Color del texto */
     padding: 10px 0;
     text-align: center;
+
 }
 
+/* Estilo del Botón */
+.btn-descargar {
+    display: inline-block;
+    margin-top: 15px;  /* Espacio entre el texto y el botón */
+    padding: 10px 20px;  /* Relleno interno del botón */
+    background-color: #33ffa2;  /* Color de fondo del botón */
+    color: black;  /* Color del texto */
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    font-size: 1rem;  /* Tamaño de la fuente */
+    border-radius: 5px;  /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Transición suave */
+}
+
+.btn-descargar:hover {
+    background-color: #28d18e;  /* Cambio de color cuando se pasa el mouse */
+    transform: translateY(-3px);  /* Efecto de elevación */
+}
+
+
 .content {
-    flex: 1; /* Hace que .content ocupe el espacio restante */
+    flex: 1;                                 /* Hace que .content ocupe el espacio restante */
     padding: 20px;
 }
 
@@ -47,7 +68,7 @@ section {
 
 footer {
     background-color: rgba(51, 255, 162, 0.3); /* Color de fondo del footer */
-    color: rgb(249, 247, 247);     /* Color del texto */
+    color: rgb(249, 247, 247);                            /* Color del texto */
     text-align: center;
     padding: 10px 0;
 }
