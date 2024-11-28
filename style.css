@@ -20,7 +20,7 @@ body {
 header {
     background-color: #0078D7;  /* Color de fondo del header */
     color: white;               /* Color del texto */
-    padding: 20px;
+    padding: 10px 0;
     text-align: center;
 }
 
